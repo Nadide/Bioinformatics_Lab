@@ -1,10 +1,6 @@
 def dnaToRna (dna):
-	for i in dna:
-		if i is 'T':
-			print ('U', end="")
-		else:
-			print (i, end="")
-	print ()
+	dna = dna.replace('T', 'U')
+	return dna
 
 t = input()
-dnaToRna (t)
+print( dnaToRna(t) )
